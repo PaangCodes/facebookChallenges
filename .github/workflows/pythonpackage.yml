@@ -1,0 +1,11 @@
+#Here is the answer to writing my
+# recursive function
+
+def forwardFactorial(startNum, endNum):
+   if startNum == endNum:
+      return startNum
+   else:
+      return startNum * forwardFactorial(startNum+1, endNum)
+
+
+# It works just like normal factorial function
