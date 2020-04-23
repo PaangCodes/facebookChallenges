@@ -8,4 +8,4 @@ def forwardFactorial(startNum, endNum):
       return startNum * forwardFactorial(startNum+1, endNum)
 
 
-# It works just like normal factorial function
+# It works just like a normal factorial function
