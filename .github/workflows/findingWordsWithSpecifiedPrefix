@@ -1,0 +1,8 @@
+# This is challenge number four from Bee Zed
+
+def returning_words_with_same_prefix(aPrefix, *words):
+    for i in words:
+        if aPrefix in i:
+            print(i)
+
+  
