@@ -1,0 +1,8 @@
+def fibonacci_func(n):
+	numOne, numTwo = 0, 1
+	result = []
+	for i in range(n):
+		result.append(numTwo)
+		numOne, numTwo = numTwo, numOne+numTwo
+	
+	return result
