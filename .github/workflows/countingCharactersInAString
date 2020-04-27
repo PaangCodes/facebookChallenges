@@ -1,0 +1,21 @@
+# This is challenge number five from Bee Zed 
+# I think that there is much better way to solve this problem, but this is the way that I solved it 
+
+def countingCharInStr(aWord):
+    result = ""
+    for i in aWord:
+        ourCharCounter = f"{i}{aWord.count(i)}-" 
+        if ourCharCounter not in result:
+            result += ourCharCounter
+
+    result = list(result)
+    newResult = ""
+    
+    for i in result:
+        if '-' == result[-1]:
+            del result[-1]
+
+        newResult += i
+        
+
+    return newResult
