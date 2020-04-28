@@ -1,0 +1,10 @@
+def censoringWords(censoringWords, sentence):
+    sentence = str(sentence)
+
+    if censoringWords in sentence:
+        sentence = sentence.replace(censoringWords, "****")
+
+    return sentence
+
+
+print(censoringWords("for", ["I am here for work"]))
