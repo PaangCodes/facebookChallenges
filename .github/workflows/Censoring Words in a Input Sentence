@@ -1,0 +1,13 @@
+def censoringWordsInAInputSentence():
+	sentence = input("What valid setence will you write? ")
+	censoredWords = input("What words do you want to censor? ").split(" ")
+	
+	for letters, words in zip(censoredWords, sentence):
+		if letters in sentence:
+			sentence = sentence.replace(letters, "****")
+	
+	return sentence
+	
+	
+	
+print(censoringWordsInSentence())
