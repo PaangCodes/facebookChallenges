@@ -2,7 +2,7 @@ def censoringWords(censoringWords, sentence):
     sentence = str(sentence)
 
     if censoringWords in sentence:
-        sentence = sentence.replace(censoringWords, "****")
+        sentence = sentence.replace(censoringWords, "*"*len(censoringWords))
 
     return sentence
 
