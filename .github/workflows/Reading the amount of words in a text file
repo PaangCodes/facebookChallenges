@@ -1,0 +1,11 @@
+with open("countingTest.txt", "r") as f:
+	fileContents = f.read(1)
+	wordCounter = 0
+	while fileContents:
+		if fileContents == " ":
+			wordCounter += 1
+		fileContents = f.read(1)
+		
+wordCounter += 1
+
+print(wordCounter)
